@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Question pour un gros con </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="libs/jquery/jquery.min.js" type="text/javascript"></script>
+
+        <script src="quizz.js"></script>
+
+    </head>
+    <body style="background-color: #9C27B0;" class="text-white position-relative vh-100 mb-0">
+        <!-- Image en haut à droite -->
+        <div class="position-absolute top-0 end-0 p-3">
+            <a href="../Controleurs/controleur.php?commande=deconnexion">"
+                <img src="../img/login-user-name-1.png"  alt="" style="height: 80px;" />
+            </a>
+            <p id="pseudo"></p>
+        </div>
+        <!-- Logo du site à gauche -->
+        <div class="position-absolute top-0 start-0 p-3">
+            <a href="vueacceuil.html">
+                <img src="../img/question_pour_un_gros_con.jpg" alt="" style="height: 120px;"/>
+            </a>
+        </div>
+
+        <!-- Titre centré en haut de la page -->
+        <div class="position-absolute mt-2 start-50 translate-middle-x w-50">
+            <div class="bg-white text-center bg-opacity-25 rounded-3 py-3 shadow-lg">
+                <h1 class="fw-bold m-0">Questions</h1>
+            </div>
+
+            <div id="quiz-container" class="container mt-4"></div>
+
+            <button id="voirScore" class="btn btn-success mt-3">Voir le score</button><div id="resultatScore" class="mt-2 text-white fs-5"></div>
+        </div>
+        <form>
+            <input type="hidden" id="categorie" />
+        </form>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Admin - Question pour un gros con</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="admin.js"></script>
+    </head>
+    <body style="background-color: #9C27B0;" class="text-white">
+        <div class="container">
+            <!-- Titre -->
+            <div class="text-center bg-white bg-opacity-25 rounded-3 py-3 shadow-lg mx-auto mt-2" style="width: 48%;">
+                <h1 class="fw-bold m-0">Question pour un gros con</h1>
+            </div>
+
+            <!-- Image en haut à droite -->
+            <div class="position-absolute top-0 end-0 p-3">
+                <a href="../Controleurs/controleur.php?commande=deconnexion">
+                    <img src="../img/login-user-name-1.png" id="deconnexion" alt="" style="height: 80px;" />
+                </a>
+            </div>
+
+            <!-- Formulaire contenu dans un bloc stylisé -->
+            <div class="container d-flex justify-content-center">
+                <div class="bg-white bg-opacity-25 p-4 rounded-3 shadow-lg w-75 mt-5">
+                    <form>
+                        <!-- Sélecteur de catégories -->
+                        <div class="mb-3">
+                            <label for="categories" class="form-label">Catégorie</label>
+                            <select name="categories" class="form-select" id="categories">
+                                <option value="-1" selected="selected">Sélectionner une catégorie</option>
+                            </select>
+                        </div>
+
+                        <!-- Zone de saisie pour la question -->
+                        <div class="mb-3">
+                            <label for="questions" class="form-label">Question</label>
+                            <textarea id="questions" class="form-control" placeholder="Entrez votre question" rows="3"></textarea>
+                        </div>
+
+                        <!-- Zone de saisie pour la réponse -->
+                        <div class="mb-3">
+                            <label for="reponses" class="form-label">Réponse</label>
+                            <textarea id="reponses" class="form-control" placeholder="Entrez la réponse" rows="3"></textarea>
+                        </div>
+
+                        <!-- Bouton d'envoi -->
+                        <div class="d-grid">
+                            <input class="btn btn-warning" type="button" name="envoyer" id="envoyer" value="Envoyer"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
